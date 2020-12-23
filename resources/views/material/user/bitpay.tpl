@@ -1,5 +1,4 @@
 <div class="row">
-
     <div class="col-lg-6 col-md-6">
         <p class="card-heading">数字货币充值</p>
         <div class="form-group form-group-label">
@@ -8,21 +7,17 @@
         </div>
     </div>
 </div>
-
 <div class="card-action">
     <div class="card-action-btn pull-left">
         <button class="btn btn-flat waves-attach" id="bitpaySubmit" name="type" onclick="bitpay('Crypto')">
-            <img src="https://bitpay.dev/img/mpay-zh.png" height="50px"/>
+            <img src="/images/crypto.jpg" height="50px"/>
         </button>
     </div>
 </div>
-
 <script>
     var pid = 0;
-
     function bitpay(type) {
         var price = parseFloat($$getValue('bitpayamount'));
-
         //console.log("将要使用 " + type + " 充值" + price + "元");
         if (isNaN(price)) {
             $("#readytopay").modal('hide');
@@ -31,31 +26,28 @@
             return;
         }
         $('#readytopay').modal();
-        $("#readytopay").on('shown.bs.modal', function () {
-            $.ajax({
-                url: "/user/payment/bitpay/purchase",
-                data: {
-                    price,
-                    type,
-                },
-                dataType: 'json',
-                type: "POST",
-                success: (data) => {
-                    //console.log(data);
+        $.ajax({
+            url: "/user/payment/bitpay/purchase",
+            data: {
+                price,
+                type,
+            },
+            dataType: 'json',
+            type: "POST",
+            success: (data) => {
+                //console.log(data);
 
-                    if (data.errcode === 0) {
-                        $("#readytopay").modal('hide');
-                        $$.getElementById('msg').innerHTML = '正在跳转到数字货币支付...'
-                        window.location.href = data.url;
-                    } else {
-                        $("#result").modal();
-                        $$.getElementById('msg').innerHTML = data.errmsg
-                    }
+                if (data.errcode === 0) {
+                    $("#readytopay").modal('hide');
+                    $$.getElementById('msg').innerHTML = '正在跳转到数字货币支付...'
+                    window.location.href = data.url;
+                } else {
+                    $("#result").modal();
+                    $$.getElementById('msg').innerHTML = data.errmsg
                 }
-            });
+            }
         });
     }
-
     function bitpayf() {
         $.ajax({
             type: "POST",

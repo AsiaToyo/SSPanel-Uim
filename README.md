@@ -12,7 +12,7 @@
 [![Telegram Channel](https://img.shields.io/badge/news-t.me%2Fsspanel_uim-0d86d7?style=flat-square)](https://t.me/sspanel_uim)
 [![Telegram Chat](https://img.shields.io/badge/chat-t.me%2Fssunion-0d86d7?style=flat-square)](https://t.me/ssunion)
 
-[演示站点](https://sspanel.host) | [使用文档](https://wiki.sspanel.host) | [更新日志](https://github.com/Anankke/SSPanel-Uim/releases) | [Telegram 频道](https://t.me/sspanel_uim) | [Telegram 水群](https://t.me/ssunion)
+[演示站点](https://sspanel.host) | [使用文档](https://wiki.sspanel.host) | [更新日志](https://github.com/Anankke/SSPanel-Uim/releases) | [配套SS/SSR后端](https://github.com/Anankke/shadowsocks-mod) | [Telegram 频道](https://t.me/sspanel_uim) | [Telegram 水群](https://t.me/ssunion) | [API 文档](https://marcosteam.gitbook.io/sspanel-api/)
 
 ## 简介
 
@@ -68,13 +68,10 @@ SSPanel UIM 使用 MIT License 开源、不提供任何担保。使用 SSPanel U
 
 - 您在使用 SSPanel UIM 时，必须保留 Staff 页面（该页面包含了 MIT License）和页脚的 Staff 入口
 - SSPanel UIM 不会对您的任何损失负责，包括但不限于服务中断、Kernel Panic、机器无法开机或正常使用、数据丢失或硬件损坏、原子弹爆炸、第三次世界大战、SCP 基金会无法阻止 SCP-3125 引发的全球 MK 级现实重构等
+- UIM 原创软件图标、图像、SVG 矢量图形均不遵循以上协议，UIM 保留所有权利，您不可以将这些内容用于其他用途。
 
 
 ## 鸣谢
-
-### [HKServerSolution](https://www.hkserversolution.com/cart.php)
-
-Demo 演示站服务器赞助。
 
 ### [贡献者](https://github.com/Anankke/SSPanel-Uim/graphs/contributors)
 
@@ -123,10 +120,9 @@ SSPanel UIM 离不开所有 [贡献代码](https://github.com/Anankke/SSPanel-Ui
 
 - 添加 Telegram OAuth
 
-[**CGDF**](https://github.com/CGDF-GitHub)
+[**CGDF**](https://github.com/TheCGDF)
 
 - xcat 一键 update
-- 适配 SSD
 - 用户列表分页加载
 
 [**CHEN**](https://github.com/ChenSee)
@@ -154,7 +150,7 @@ SSPanel UIM 离不开所有 [贡献代码](https://github.com/Anankke/SSPanel-Ui
 
 #### Anankke
 
-- [Anankke 很可爱请给 Anankke 钱](https://t.me/anankke/5)
+- [Anankke 很可爱请给 Anankke 钱](https://t.me/anankke/7)
 
 #### dumplin
 
@@ -162,10 +158,9 @@ SSPanel UIM 离不开所有 [贡献代码](https://github.com/Anankke/SSPanel-Ui
 
 #### galaxychuck
 
-- [hkserversolution-推荐UIM面板服务器放置](https://www.hkserversolution.com/aff.php?aff=60)
-- [moecloud-美國VPS](https://moecloud.asia/aff.php?aff=56)
+- [moecloud-美國VPS](https://lite.moe/aff.php?aff=56)
 
 #### laurieryayoi
 
-[laurieryayoi 的前端课程报名](https://t.me/kinokonominoco)
+[dmit-美国香港服务器](https://www.dmit.io/aff.php?aff=912)
 
